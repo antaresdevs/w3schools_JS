@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- VARIABLES.-->
+<h1> Variables </h1>
+<p> In this example, x is defined as a variable. Then, x is assigned the value of 30 </p>
+<p id="fruits"></p>
+
+<!-- OPERATORS and EXPRESSIONS -->
+<h1>Operators and Expressions</h1>
+<p>In JavaScript the = operator is used to assign values to variables. JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+<p id ="result"></p>
+
+<p> An expression is a combination of values, variables, and operators, which computes to a value.</p>
+<p id ="fullName"> 
+
+<p> JavaScript <strong> keywords</strong> are used to identify actions to be performed. The <strong> var </strong> keyword tells the browser to create a new variable.</p>
+
+<!-- COMMENTS-->
+<h1> Comments </h1>
+<p> Code after double slashes // or between /* and */ is treated as a comment.</p>
+
+
+<script>
+var x;
+x = 30; 
+document.getElementById("fruits").innerText = x;
+
+var z = 8;
+var t = 2;
+document.getElementById("result").innerText = z/4 + t;
+
+document.getElementById("fullName").innerText="Stewart" + " " + "Donny" // comments will not be executed!
+/*this is example of comment in JS*/
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1> Typeof operator </h1>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id = "findOutTypes"></p>
+
+<h1>Null</h1>
+<p>In JavaScript null is "nothing". It is supposed to be something that doesn't exist.
+
+Unfortunately, in JavaScript, the data type of null is an object. </p>
+<script>
+document.getElementById("findOutTypes").innerHTML = 
+typeof "mary" + "<br>" +
+typeof 6.18 + "<br>" +
+typeof false + "<br>" +
+typeof ["apple", "orange", "lemon"] + "<br>" +
+typeof {age: 55, name: "ivan"};
+</script>
+</body>
+
+</html>

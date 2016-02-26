@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Change CONTENT-->
+<h2> What can JavaScript do?</h2>
+<p id="changeButton"> JS can change content. Let's try!</p>
+<button type="button" onclick="document.getElementById('changeButton').innerHTML = 'You see. Content has been changed!'">  Click me!!</button>
+
+<!--Change Color-->
+
+<h2> What else can JS do?</h2>
+<p id="changeElement">It can change style of html element</p>
+
+<button type="button" onclick="yo()"> Change color!</button>
+
+<script>
+function yo() {
+var x = document.getElementById("changeElement");
+x.style.fontSize = "40px";
+x.style.color = "red";
+}
+
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+<h1>What day is it tomorrow?</h1>
+<p id="dayOfWeek"> Let's find out!<p>
+<button type="button" onclick="weekDay">Click here</button>
+<p><strong> Note:</strong> myFunction is stored in an external file called "script.js".</p>
+
+<script src="script.js"></script>
+
+
+<!-- External scripts are practical when the same code is used in many different web pages.
+JavaScript files have the file extension .js. To use an external script, put the name of the script file in the src (source) attribute of the <script> tag.
+External scripts CANNOT contain <script> tags.
+
+Placing JavaScripts in external files has some advantages:
+- It separates HTML and code
+- It makes HTML and JavaScript easier to read and maintain
+- Cached JavaScript files can speed up page loads
+
+-->
+
+<p><b>Атрибут async </b> Поддерживается всеми браузерами, кроме IE9-. Скрипт выполняется полностью асинхронно. То есть,
+при обнаружении script async src="..." браузер не останавливает обработку страницы, а
+спокойно работает дальше. Когда скрипт будет загружен — он выполнится. </p>
+
+<pre>Атрибут defer
+Поддерживается всеми браузерами, включая самые старые IE. Скрипт также выполняется
+асинхронно, не заставляет ждать страницу, но есть два отличия от async.
+Первое — браузер гарантирует, что относительный порядок скриптов с defer будет сохранён.
+То есть, в таком коде (с async) первым сработает тот скрипт, который раньше загрузится:
+А в таком коде (с defer) первым сработает всегда 1.js, а скрипт 2.js, даже если загрузился раньше,
+будет его ждать.
+Поэтому атрибут defer используют в тех случаях, когда второй скрипт 2.js зависит от первого 1.js, к
+примеру — использует что-то, описанное первым скриптом.
+Второе отличие — скрипт с defer сработает, когда весь HTML-документ будет обработан браузером.
+Например, если документ достаточно большой…
+Важная информация не покажется, пока не загрузится скрипт
+script src="https://js.cx/hello/ads.js?speed=0"></script 
+...Важная информация!
+script src="1.js" async></script
+script src="2.js" async></script
+</pre>
+
+</body>
+</html>

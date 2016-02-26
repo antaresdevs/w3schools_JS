@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results</p> 
+<p id ="jenny"></p>
+<p id ="jenny$"></p>
+
+<h1>JavaScript Arrays</h1>
+<p id ="summerFruits"></p>
+<p>Array indexes are zero-based, which means the first item is [0], second is [1], and so on.</p>
+
+<h1>JavaScript objects</h1>
+<p id ="ivanFamily"></p>
+
+<script>
+var z = 15 + 5 + "Jennyfer";
+document.getElementById("jenny").innerHTML = z;
+
+var y = "Jennyfer" + 4 + 13;
+document.getElementById("jenny$").innerHTML = y;
+
+var fruits =["apple", "juice", "lemon"]
+document.getElementById("summerFruits").innerHTML = fruits;
+
+var member = {
+	firstName : "Eugen",
+	lastName : "Ivanovych",
+	age : 55
+};
+document.getElementById("ivanFamily").innerHTML = member.firstName + " " + member.lastName + " is " + member.age + " years old."; 
+</script>
+
+
+</body>
+
+</html>
