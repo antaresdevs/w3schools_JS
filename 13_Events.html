@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="getElementById('time').innerHTML=Date()">Check time and date</button>  
+
+<p id="time"></p>
+<!-- Changes IN P ID-->
+
+<button onclick=this.innerHTML=Date()>Check again!</button>   
+<!-- Changes INSIDE THE button-->
+
+
+<p>What day is it today?</p>
+<button onmouseover="dateToday()">Check now!</button>
+
+<script>
+	function dateToday() {
+	document.getElementById("day").innerHTML = Date();
+	}
+</script>
+
+
+<p id ="day"></p>
+
+<!-- 
+onchange	An HTML element has been changed
+onclick	    The user clicks an HTML element
+onmouseover	The user moves the mouse over an HTML element
+onmouseout	The user moves the mouse away from an HTML element
+onkeydown	The user pushes a keyboard key
+onload	    The browser has finished loading the page
+-->
+
+</body>
+</html>

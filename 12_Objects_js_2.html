@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id = "staff"></p>
+
+<script>
+	var employee = {
+		name    	: "Alexei",
+		surname 	: "Zhukov",
+		age       	: 40,
+		familyStatus: "single",
+		fullName 	: function() {
+			return this.name + " " + this.surname;
+			}
+};	
+	
+document.getElementById("staff").innerHTML = employee.fullName();
+
+
+</script>  
+
+
+<!-- Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.-->
+</body>
+</html>

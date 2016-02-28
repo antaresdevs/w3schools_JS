@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id = "purchase"></p>
+<p id = "weatherForecast"></p>
+
+<script>
+var car = {
+	type  :	"Fiat", 
+	model :	500, 
+	color :	"blue" 
+};
+document.getElementById("purchase").innerHTML = "The colour of the car is" + " " + car.color + ". " + "The model of the car is" + " " + car["model"] + ".";
+</script>
+
+
+<script>
+var weather = {
+	temperature  :	35, 
+	day          :	"Monday", 
+	windSpeed    :	46,
+	weatherToday : function() {
+		return this.day + " " + this.windSpeed;
+		}
+};		
+
+document.getElementById("weatherForecast").innerHTML = weather.weatherToday();
+</script>
+
+<!-- There are two different ways to access an object property:
+You can use car.color  or car["colour"].-->
+
+</body>
+</html>

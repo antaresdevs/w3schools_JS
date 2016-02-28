@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<script>
+var length = 16;                               // Number
+var lastName = "Johnson";                      // String
+var cars = ["Saab", "Volvo", "BMW"];           // Array
+var x = {firstName:"John", lastName:"Doe"};    // Object
+
+var x = "16" + "Volvo"; // 	If the second operand is a string, JavaScript will also treat the first operand as a string. 
+
+var x = "Volvo" + 16 + 4; //Volvo164
+var x = 16 + 4 + "Volvo"; // 20Volvo
+
+/*In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".
+In the second example, since the first operand is a string, all operands are treated as strings.*/
+
+var y = 125e7 // 1250000000
+var z = 123e-5;     // 0.00123
+document.getElementById("demo").innerHTML = y;
+
+/*Extra large or extra small numbers can be written with scientific (exponential) notation*/
+
+/*!!!
+Difference Between Undefined and Null
+typeof undefined             // undefined
+typeof null                  // object
+null === undefined           // false
+null == undefined            // true
+*/
+
+
+</script>
+
+</body>
+</html>

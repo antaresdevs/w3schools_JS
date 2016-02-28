@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- returns the character -->
+<p id = "fruit"></p>
+
+	<script>
+		var harvest = "apple, banana, lemon";
+		document.getElementById("fruit").innerHTML = harvest.charAt(4); 
+	</script>
+	
+	<!-- returns the UNICODE -->
+<p id = "tree"></p>
+
+	<script>
+		var veg = "apple, banana, lemon";
+		document.getElementById("tree").innerHTML = veg.charCodeAt(3); 
+	</script>
+	
+	
+	<!-- Converting a String to an Array - SPLIT-->
+	
+<p id = "num"></p>
+	
+<script>
+	var letters = "a,b,c,d,f"
+	var arr = letters.split(",");
+	document.getElementById("num").innerHTML=arr[1];
+ </script>
+
+</body>
+</html>

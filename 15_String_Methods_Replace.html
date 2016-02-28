@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- SLICE METHOD-->
+<p id = "fruit"></p>
+
+	<script>
+		var harvest = "apple, banana, lemon";
+		document.getElementById("fruit").innerHTML = harvest.replace("apple","pear"); 
+		
+	</script>
+	
+	
+	<!-- REPLACE-->
+
+
+<button onclick = "myCars()">Which car do you prefer?</button>	
+<p id = "car"></p>
+
+	<script>
+		function myCars() {		
+			var carType = "Hundai, Wolts, Audi";
+			var carChange = carType.replace("Wolts","Toyota"); 
+			document.getElementById("car").innerHTML = carChange; 
+		}
+
+	</script>
+	
+
+	<!-- UPPERCASE-->
+
+<button onclick = "animals()">Let's change to upper case!</button>	
+<p id = "animal"> Giraffe, monkey, elephant</p>
+
+	<script>
+		function animals() {
+			var zoo = document.getElementById("animal").innerHTML;
+			document.getElementById("animal").innerHTML = zoo.toUpperCase(); 
+		}	
+	</script>
+
+	
+	
+	<!-- CONCAT - JOIN STRINGS-->
+<p id = "veget"> </p>
+
+	<script>
+		var veg = "carrot";
+		var veg2 = "juice";
+		document.getElementById("veget").innerHTML = veg.concat(" ", veg2); 
+	</script>
+
+</body>
+</html>

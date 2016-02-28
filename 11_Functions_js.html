@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<p id ="weather"></p>
+<p id ="temperature"></p>
+<p id="string"></p>
+<p id="world"></p>
+
+<script>
+
+function weather (h1, h2) {
+return  h1 * h2;
+}
+document.getElementById("demo").innerHTML = weather (9,8); // function returns 72
+
+function fareng(f) {
+return (5/9) * (f-32);
+}
+document.getElementById("weather").innerHTML = fareng(100); // 37.7 градусов по Цельсию. Функция, чтобы узнать градус по Цельсию из Фаренгейта.
+
+/*Accessing a function without (), will return the function definition: function toCelsius(f) { return (5/9) * (f-32); }  */
+
+function toCelcius(c) {
+return (5/9) * (c-32);
+}
+document.getElementById("temperature").innerHTML = "Today the temperature is " + toCelcius(90) + " celcius."; 
+
+
+function myFunction(name) {
+    return "Hello " + name;
+}
+document.getElementById("string").innerHTML= myFunction("John"); 
+
+
+function myFunction() {
+    document.getElementById("world").innerHTML = "Hello World!";
+}
+myFunction();
+
+
+
+/*The code inside the function will execute when "something" invokes (calls) the function:
+
+ - When an event occurs (when a user clicks a button)
+ - When it is invoked (called) from JavaScript code
+ - Automatically (self invoked)*/
+
+
+</script>
+
+</body>
+</html>

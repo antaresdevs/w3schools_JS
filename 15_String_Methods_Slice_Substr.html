@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- SLICE METHOD-->
+
+<p id = "fruit"></p>
+<p id = "day"></p>
+<p id = "trees"></p>	
+<p id = "gardenTrees"></p>
+	
+	<script>
+		var harvest = "apple, banana, lemon";
+		document.getElementById("fruit").innerHTML = harvest.slice(7,13); 
+	</script>
+	
+	<script>
+		var week = "Monday, Tuesday, Wednesday";
+		document.getElementById("day").innerHTML = week.slice(-10);  /*COUNTING FRO THE END. If you omit the second parameter, the method will slice out the rest of the string*/
+	</script>
+	
+	<script>
+		var garden = "oak, apple, pinetree";
+		document.getElementById("trees").innerHTML = garden.substring(5,10); /*NO Negaative -*/
+	</script>
+	
+	
+	<script>
+		var fruitGarden = "oak, apple, pinetree";
+		document.getElementById("gardenTrees").innerHTML = fruitGarden.substr(12,8); /*the second parameter specifies the length of the extracted part.*/
+	</script>
+	
+
+</body>
+</html>
